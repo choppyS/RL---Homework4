@@ -1,15 +1,15 @@
-# Homework 4
+# Homework 4  🤖 ⚙️
 
 This repository contains the ROS 2 packages for simulating and controlling the `rl_fra2mo` robot, including navigation, exploration, visualization, and marker detection. Follow the instructions below to set up and use the project.
 
-## Prerequisites
+## Prerequisites  🔍 🛠️
 Ensure that you have a ROS 2 workspace set up and ROS 2 installed on your system. Clone this repository within the `src` directory of your ROS 2 workspace.
 
-## Installation
+## Installation  🦾 🔧
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/elenadag/homework4.git
+   git clone https://github.com/choppyS/RL---Homework4.git
 
 2. Build the workspace:
     ``` bash
@@ -19,7 +19,7 @@ Ensure that you have a ROS 2 workspace set up and ROS 2 installed on your system
     ```bash
     source install/setup.bash
 
-## Launching the Simulation
+## Launching the Simulation  🔋 🎯
 
 To launch the Gazebo simulation:
 
@@ -27,7 +27,7 @@ To launch the Gazebo simulation:
 ros2 launch rl_fra2mo_description gazebo_fra2mo.launch.py marker_id:=115 marker_size:=0.2 reference_frame:=camera_link_optical
 ```
 
-## Exploration and navigation
+## Exploration and navigation  🌍 ⛵
 
 To start the exploration and navigation:
 
@@ -35,7 +35,7 @@ To start the exploration and navigation:
 ros2 launch rl_fra2mo_description fra2mo_explore.launch.py
 ```
 
-## Visualization 
+## Visualization  🖥️ 🧩
 
 To visualize the exploration in RViz:
 
@@ -59,7 +59,7 @@ To eventually change the desired RViz configuration, it is possible to select th
     _conf.rviz
     ```
 
-## Robot Behaviors
+## Robot Behaviors  🤖 🦾
 
 ### Following specific goals
 
@@ -68,7 +68,7 @@ Make the robot follow four predefined goals:
 ros2 run rl_fra2mo_description follow_waypoints.py --mode 4goals
 ```
 
-### Exploring the entire map
+### Exploring the entire map  🗺️ 🏃
 
 Allow the robot to explore the whole map:
 
@@ -76,14 +76,14 @@ Allow the robot to explore the whole map:
 ros2 run rl_fra2mo_description follow_waypoints.py --mode scan
 ```
 
-### Testing exploration parameters
+### Testing exploration parameters  🧪 🔩
 
 Test the exploration parameters for tuning:
 ```
 ros2 run rl_fra2mo_description follow_waypoints.py --mode test_explore
 ```
 
-### Approaching Obstacle 9
+### Approaching Obstacle 9  🎛️ 🪨
 Open `rqt_image_view`, by entering
 ```
 ros2 run rqt_image_view rqt_image_view
